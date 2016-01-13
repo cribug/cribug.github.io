@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf8">
+    <title>缘缘我爱你 </title>
+    <link rel="stylesheet" href="http://www.tianox.com:80/css/style.css" type="text/css"></link>
+<link rel='stylesheet' href='http://www.tianox.com:80/teamplate/giftFlower/css/55c16d94000109f300000000.css' />
+<link rel='stylesheet' href='http://www.tianox.com:80/teamplate/giftFlower/css/55c16dab0001286100000000.css' />
+<link rel='stylesheet' href='http://www.tianox.com:80/teamplate/giftFlower/css/55c16dc00001fa1a00000000.css' />
+<link rel='stylesheet' href='http://www.tianox.com:80/teamplate/giftFlower/css/55c16dda0001113100000000.css' />
+
+<style type="text/css">
+.terminal {
+    font-size: 14px;
+    font-weight:bold;
+    color: #FFFFFF;
+    letter-spacing: 8px;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    z-index: 100;
+    text-align: left;
+}
+</style>
+</head>
+
+<body>
+<div style="display:none">
+    
+        
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=27836179&auto=1&height=66"></iframe>
+    
+</div>
+<div id="saycontent" style="display: none" ><span class="space">缘缘：</span><br><span class="space"></span><br><span class="space">我不能确定未来能否给你幸福，</span><br><span class="space"></span><br><span class="space">但是我发誓，我会一直努力让你幸福</span><br><span class="space"></span><br><span class="space">我不敢保证能让你过上住洋楼，</span><br><span class="space"></span><br><span class="space">但是我会努力争取让你幸福... </span><br><span class="space"></span><br><span class="space">我很喜欢写日记，</span><br><span class="space"></span><br><span class="space">可我日记里没有你。</span><br><span class="space"></span><br><span class="space">只因我的日记都记载着过去，</span><br><span class="space"></span><br><span class="space">而你在我的生命里，</span><br><span class="space"></span><br><span class="space">我想你陪我一起走过这世间的风雨，</span><br><span class="space"></span><br><span class="space">你愿意成为我永远的现在么?</span><br><span class="space">        </span><br><span class="space">         </span><br><span class="space">         </span><br><span class="space">         </span><br><span class="space">         </span><br><span class="space">         </span><br><span class="space">         </span><br><span class="space">         </span></div>
+<div id='content'>
+    <ul class='content-wrap'>
+        <!-- 第一副画面 -->
+        <li>
+            <!-- 背景图 -->
+            <div class="a_background">
+                <div class="a_background_top"></div>
+                <div class="a_background_middle"></div>
+                <div class="a_background_botton"></div>
+            </div>
+            <!-- 云 -->
+            <div class="cloudArea">
+                <div class="cloud cloud1"></div>
+                <div class="cloud cloud2"></div>
+            </div>
+            <!-- 太阳 -->
+            <div id="sun"></div>
+        </li>
+        <!-- 第二副画面 -->
+        <li>
+            <!-- 背景图 -->
+            <div class="b_background"></div>
+            <div class="b_background_preload"></div>
+            <!-- 商店 -->
+            <div class="shop">
+                <div class="door">
+                    <div class="door-left"></div>
+                    <div class="door-right"></div>
+                </div>
+                <!-- 灯 -->
+                <div class="lamp"></div>
+            </div>
+            <!-- 鸟 -->
+            <div class="bird"></div>
+        </li>
+        <!-- 第三副画面 -->
+        <li>
+            <!-- 背景图 -->
+            <div class="c_background">
+                <div class="c_background_top"></div>
+                <div class="c_background_middle"></div>
+                <div class="c_background_botton"></div>
+            </div>
+            <!-- 小女孩 -->
+            <div class="girl"></div>
+            <div class="bridge-bottom">
+                <div class="water">
+                    <div id="water1" class="water_1"></div>
+                    <div id="water2" class="water_2"></div>
+                    <div id="water3" class="water_3"></div>
+                    <div id="water4" class="water_4"></div>
+                </div>
+            </div>
+            <!-- 星星 -->
+            <ul class="stars">
+                <li class="stars1"></li>
+                <li class="stars2"></li>
+                <li class="stars3"></li>
+                <li class="stars4"></li>
+                <li class="stars5"></li>
+                <li class="stars6"></li>
+            </ul>
+            <div class="logo">缘缘，I love you forever</div>
+            <div class="terminal"></div>
+        </li>
+    </ul>
+    <!-- 雪花 -->
+    <div id="snowflake"></div>
+    <!-- 小男孩 -->
+    <div id="boy" class="charector"></div>
+</div>
+<script type="text/javascript" src="http://www.tianox.com:80/js/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.tianox.com:80/teamplate/giftFlower/js/55ac9a860001a6c500000000.js"></script>
+<script type="text/javascript" src="http://www.tianox.com:80/teamplate/giftFlower/js/55ac9ea30001ace700000000.js"></script>
+<script type="text/javascript" src="http://www.tianox.com:80/teamplate/giftFlower/js/55c16c910001e21b00000000.js"></script>
+<script type="text/javascript" src="http://www.tianox.com:80/js/typewriting.min.js"></script>
+<script type="text/javascript">
+
+$(function(){
+    var str= $("#saycontent").html();
+    var sign = "<br><br><br><span style='float:right'>缘缘，我爱你！</span>";
+    setTimeout( function(){
+        $('.terminal').typewriting(str+sign, {
+            "typing_interval": 300,
+            "blink_interval": "1s",
+            "cursor_color": "#FFFFFF"
+        }, function() {
+            console.log( "END" );
+        });
+        
+    }, 32000);
+});
+</script>
+<div style="display: none">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?1de51c7a10685de3e9dd75efe6bc84dc";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256941446'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1256941446' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+</body>
+</html>
